@@ -1,0 +1,9 @@
+classe - é uma estrutura de um objeto, que podemos armazenar coisas dentro dela, possui atributo e ações
+
+objeto - caracteristicas
+atributos e mteodos - propriedades de um objeto (variaveis ou campos)
+metodos - São ações
+
+herança - reutilizar as estruturas de uma classe, como se fosse "filha" da classe principal
+
+Polimorfismo - mesmas ações com objetivos distintos
