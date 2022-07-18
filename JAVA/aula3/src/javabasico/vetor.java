@@ -1,4 +1,4 @@
-package javabasico.variaveis;
+package javabasico;
 
 public class vetor {
 
