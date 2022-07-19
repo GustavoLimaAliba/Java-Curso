@@ -4,7 +4,26 @@ public class principal {
 public static void main(String[] args) {
 	carro bmw = new carro();
 	bmw bmwDois =new bmw();
-	System.out.println(bmw.calcularAcelerecao(20, 10));
+	ferrari ferrari = new ferrari();
+	
+	carro ferrariDois = new ferrari();
+	ferrari.isDirigeSozinho();
+	((ferrari) ferrariDois).isDirigeSozinho();
+	((ferrari) ferrariDois).setDirigeSozinho(true);
+	
+	System.out.println(((ferrari) ferrariDois).isDirigeSozinho());
+	
+	carro[] carros = new carro[] {bmw,  ferrari, ferrariDois, bmwDois};
+	bmwDois.calcularAcelerecao(10, 10);
+	ferrariDois.calcularAcelerecao(10, 10);
+	
+	for (carro carro : carros) {
+		if (carro instanceof ferrari) {
+			System.out.println(((ferrari) carro).isDirigeSozinho());
+		}
+	}
+	
+	/*System.out.println(bmw.calcularAcelerecao(20, 10));
 	bmw.setMarca("bmw");
 	
 	bmw.setModelo("A2");
@@ -26,5 +45,7 @@ public static void main(String[] args) {
 	System.out.println(bmw.calcularAcelerecao(bmw.getVelocidade(), 10, 10, 6));
 	System.out.println(bmw.calcularAcelerecao(bmw.getVelocidade(), 10));
 	System.out.println(bmw.calcularAcelerecao(100, 5));
-}
+	
+
+*/}
 }
