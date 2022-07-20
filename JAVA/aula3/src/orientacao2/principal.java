@@ -2,14 +2,33 @@ package orientacao2;
 
 public class principal {
 public static void main(String[] args) {
-	carro bmw = new carro();
+	/*carro bmw = new carro();
+	
+	
+
+	*/
+	bmw bmw = new bmw();
 	bmw bmwDois =new bmw();
 	ferrari ferrari = new ferrari();
+	bmwDois.piscarAlerta();
+	ferrari.piscarAlerta();
+
 	
+	try {
+	
+	bmwDois.setVelocidade(-10);
+	} catch (negocioException e) {
+		System.out.println(e);
+		
+	} finally {
+		System.out.println("passou aqui");
+	}
 	carro ferrariDois = new ferrari();
+	
 	ferrari.isDirigeSozinho();
 	((ferrari) ferrariDois).isDirigeSozinho();
 	((ferrari) ferrariDois).setDirigeSozinho(true);
+
 	
 	System.out.println(((ferrari) ferrariDois).isDirigeSozinho());
 	

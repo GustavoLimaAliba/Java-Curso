@@ -20,6 +20,10 @@ public class ferrari extends carro {
 	public void setDirigeSozinho(boolean dirigeSozinho) {
 		this.dirigeSozinho = dirigeSozinho;
 	}
+	public void piscarAlerta() {
+		System.out.println("ferrari piscando");
+	}
+	
 }
 
 

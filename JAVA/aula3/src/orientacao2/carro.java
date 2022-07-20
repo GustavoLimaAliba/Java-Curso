@@ -1,6 +1,6 @@
 package orientacao2;
 
-public class carro {
+public abstract class carro {
 	
 	private String marca;
 	private String modelo;
@@ -8,6 +8,8 @@ public class carro {
 	private int velocidade;
 	private double kmPorLtro;
 	public int setVelocidade;
+	
+	public abstract void piscarAlerta();
 	
 public carro() {
 		System.out.println("construindo o carro");
@@ -53,9 +55,9 @@ public carro(String marca, String modelo) {
 	public int getVelocidade() {
 		return velocidade;
 	}
-	public void setVelocidade(int velocidade) {
+	public void setVelocidade(int velocidade) throws negocioException {
 		if( velocidade <= 0) {
-			System.out.println("valor invalido");
+			throw new negocioException("valor invalido");
 		} else {
 		this.velocidade = velocidade;
 		}
