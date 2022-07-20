@@ -1,6 +1,6 @@
 package orientacao2;
 
-public abstract class carro {
+/*public abstract class carro {
 	
 	private String marca;
 	private String modelo;
@@ -8,8 +8,17 @@ public abstract class carro {
 	private int velocidade;
 	private double kmPorLtro;
 	public int setVelocidade;
+	*/
+
+public class carro {
 	
-	public abstract void piscarAlerta();
+	private String marca;
+	private String modelo;
+	private int aceleracao;
+	private int velocidade;
+	private double kmPorLtro;
+	public int setVelocidade;
+	//public abstract void piscarAlerta();
 	
 public carro() {
 		System.out.println("construindo o carro");

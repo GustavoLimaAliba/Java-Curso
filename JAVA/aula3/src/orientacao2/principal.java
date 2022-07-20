@@ -1,5 +1,8 @@
 package orientacao2;
 
+import entidade.bmw;
+import entidade.ferrari;
+
 public class principal {
 public static void main(String[] args) {
 	/*carro bmw = new carro();
@@ -14,11 +17,12 @@ public static void main(String[] args) {
 	ferrari.piscarAlerta();
 
 	
-	try {
 	
-	bmwDois.setVelocidade(-10);
-	} catch (negocioException e) {
-		System.out.println(e);
+		try {
+	
+//	bmwDois.setVelocidade(-10);
+	//} catch (negocioException e) {
+		//System.out.println(e);
 		
 	} finally {
 		System.out.println("passou aqui");
@@ -37,11 +41,14 @@ public static void main(String[] args) {
 	ferrariDois.calcularAcelerecao(10, 10);
 	
 	for (carro carro : carros) {
+		if(constante.MARCA_FAMOSA.equals(carro.getMarca())) {
+			System.out.println("carro de marca famosa");
+		}
 		if (carro instanceof ferrari) {
 			System.out.println(((ferrari) carro).isDirigeSozinho());
 		}
 	}
-	
+	/*calcular.soma(0, 0);
 	/*System.out.println(bmw.calcularAcelerecao(20, 10));
 	bmw.setMarca("bmw");
 	

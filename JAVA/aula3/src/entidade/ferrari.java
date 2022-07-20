@@ -1,4 +1,6 @@
-package orientacao2;
+package entidade;
+
+import orientacao2.carro;
 
 public class ferrari extends carro {
 	private boolean dirigeSozinho;

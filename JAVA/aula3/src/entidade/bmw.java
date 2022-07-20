@@ -1,4 +1,8 @@
-package orientacao2;
+package entidade;
+
+import orientacao2.carro;
+import orientacao2.conversivel;
+import orientacao2.utilitario;
 
 public class bmw extends carro implements conversivel, utilitario {
 	
