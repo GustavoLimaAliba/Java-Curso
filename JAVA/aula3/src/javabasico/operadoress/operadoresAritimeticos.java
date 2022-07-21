@@ -1,4 +1,4 @@
-package javabasico;
+package javabasico.operadores;
 
 public class operadoresAritimeticos {
 
@@ -10,6 +10,9 @@ public class operadoresAritimeticos {
 		int mult = 10 * 5;
 		
 		int a = 10;
+		int b = 5;
+		
+		System.out.println(a / b);
 		
 		//a++; //postfix depois do operando
 		//++a; //prefix antes do operando
